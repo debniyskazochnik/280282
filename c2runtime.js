@@ -24767,13 +24767,13 @@ cr.behaviors.solid = function(runtime)
 	behaviorProto.acts = new Acts();
 }());
 cr.getObjectRefTable = function () { return [
-	cr.plugins_.Keyboard,
-	cr.plugins_.Sprite,
-	cr.plugins_.Text,
-	cr.plugins_.Touch,
-	cr.plugins_.TiledBg,
 	cr.plugins_.Browser,
 	cr.plugins_.Audio,
+	cr.plugins_.Keyboard,
+	cr.plugins_.TiledBg,
+	cr.plugins_.Touch,
+	cr.plugins_.Sprite,
+	cr.plugins_.Text,
 	cr.behaviors.solid,
 	cr.behaviors.Flash,
 	cr.behaviors.destroy,
@@ -24846,6 +24846,7 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.cnds.OnLayoutEnd,
 	cr.system_object.prototype.cnds.OnLoadFinished,
 	cr.plugins_.Text.prototype.acts.SetVisible,
+	cr.plugins_.Text.prototype.acts.Destroy,
 	cr.plugins_.Text.prototype.cnds.IsVisible,
 	cr.plugins_.Touch.prototype.cnds.OnTouchStart,
 	cr.plugins_.Text.prototype.acts.SetText,
